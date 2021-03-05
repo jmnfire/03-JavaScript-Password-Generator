@@ -79,6 +79,3 @@ function writePassword() {
   }
 
 }
-
-
-//console.log(generatePassword());

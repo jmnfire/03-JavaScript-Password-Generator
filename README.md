@@ -7,7 +7,7 @@ A password is randomly generated based on criteria that the user provides when p
 
 When the user clicks the button "Generate Password" they are first promoted for password length. If outside the range of 8-50, the user will have to keep putting  numbers until its inside the length within the range. The prompt will loop until the user enters a valid number.
 
-The program then prompts the user to define if they would like to include numbers, characters, uppercase or lowercase letters. If the user selects none to all criteria, the program will ask it to select at least each one and will loop back through the prompts. If the user does not pick at least one of the criteria, a prompt will let the use know they need to regenerate a new password. 
+The program then prompts the user to define if they would like to include numbers, characters, uppercase or lowercase letters. If the user selects none to all criteria, the program will ask it to select at least each one and will loop back through the prompts. If the user does not pick at least one of the criteria, a prompt will let the user know they need to regenerate a new password. 
 
 When all parameters have been defined, the password will appear within the password box.
 
@@ -30,11 +30,11 @@ When all parameters have been defined, the password will appear within the passw
 
 NO installation required you can view the page. If you want to look at my code, do a git clone or my repository. 
 
-[Link to website]()
+[Link to website](https://jmnfire.github.io/03-JavaScript-Password-Generator/)
 
 ## Usage
 
-![screenshot](images/screencapture-file-Users-JovanNixon-Desktop-Homework-03-JavaScript-Password-Generator-index-html-2021-03-04-11_04_47.png)
+![screenshot](images/screencapture-jmnfire-github-io-03-JavaScript-Password-Generator-2021-03-04-12_56_04.png)
 
 
 ## License 
