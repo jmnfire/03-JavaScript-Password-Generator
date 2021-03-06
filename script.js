@@ -8,11 +8,11 @@ var numberChar = '1234567890';
 var upperChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var lowerChar = 'abcdefghijklmnopqrstuvwxyz';
 
-var upper, lower, number, special = false;
 
 function generatePassword() {
   var confirmLength = '';
   var password = "";
+  var upper, lower, number, special = false;
   //library for all the characters selected
   var userChoices = "";
   //Primitive types: strings, numbers, booleans (0 false, 1 true)
@@ -23,7 +23,7 @@ function generatePassword() {
       break;
     }
   }
-
+  
   if (confirmLength) {
     if (confirm("Would you like to use lowercase characters?") == true) {
       lower = true
@@ -51,12 +51,12 @@ function generatePassword() {
     //if none of the character types are selected, alerts the user to choose at least one
     if (!lower && !upper && !special && !number) {
       alert("At least one character type must be selected")
+      return false;
 
     } else {
       for (var i = 0; i < confirmLength; i++) {
         var singleRandomChar = userChoices[Math.floor(Math.random() * userChoices.length)];
         password += singleRandomChar; //+= means add the variable and a new variable together
-        console.log(singleRandomChar);
       }
     }
 
@@ -76,6 +76,7 @@ function writePassword() {
     passwordText.value = "You must regenerate a password ";
   } else {
     passwordText.value = password; //textareas and forms have a special attribute called value which allows text modification
+
   }
 
 }
